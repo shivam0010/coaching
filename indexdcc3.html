@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+        <style>
+        *{
+  margin: 0;
+  padding: 0;
+  user-select:none;
+  
+}
+
+body{
+    background:#48CAE4;
+    width:100%;
+    height:500vh;
+}
+
+/*CSS FOR HEADING START*/
+          .headinglogobox {
+            height: 120px;
+            width: 120px;     
+             background-color:#03045E;      background-image:url("https://00coaching.github.io/home/logo.png");                                      
+						 background-size:120px 120px;
+						 background-repeat:no-repeat;
+            border: 5px solid #48CAE4;
+            border-radius: 50%;
+            float: left;
+            margin-left: 10px;
+            margin-top: 10px;
+            box-shadow:
+					    	10px 10px 10px rgba(0, 0, 0, 0.5),
+						   -10px -10px 20px rgba(255, 255, 255, .6);
+        }
+
+        .headingtext {
+            display: block;
+            font-size: 6vw;
+            width: 100%;
+            margin-top: 10px;
+            text-align: center;
+            color: transparent;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: #05386b;
+            letter-spacing: 2px;
+            user-select: none;
+
+        }
+        
+        /*CSS FOR HEADING END*/
+
+         /*CSS FOR NAVIGATION MENU START*/
+         
+          nav {
+	margin: auto ;
+	margin-top:90px;
+	position: relative;
+	width: 88%;
+	height: 50px;
+	background-color: #023E8A;
+	border-radius: 8px;
+	font-size: 0;
+	font-family:ariel;
+}
+nav a {
+margin:0 30px;
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+	width: 100px;
+}
+a:nth-child(2) {
+	width: 110px;
+}
+a:nth-child(3) {
+	width: 100px;
+}
+a:nth-child(4) {
+	width: 120px;
+}
+a:nth-child(5) {
+	width: 120px;
+}
+nav .start-home, a:nth-child(1):hover~.animation {
+	width: 160px;
+	left: 0;
+	background-color: #EF476F;
+	
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+	width: 170px;
+	left: 160px;
+	background-color: #06D6A0;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+	width: 150px;
+	left: 330px;
+	background-color: #F77F00;
+}
+nav .start-portefolio, a:nth-child(4):hover~.animation {
+	width: 170px;
+	left: 490px;
+	background-color: #D62828;
+}
+nav .start-contact, a:nth-child(5):hover~.animation {
+	width: 180px;
+	left: 682.5px;
+	background-color: #003049;
+}
+
+nav svg{
+    color:#ADE8F4;
+    margin-top:10px;
+}
+.home{
+    margin-right:5px;
+}
+
+#aboutus{
+    margin-right:5px;
+}
+
+#pdf{
+    margin-right:5px;
+}
+
+#contact{
+    margin-right:5px;
+}
+
+#register{
+    margin-right:5px;
+}
+
+/*CSS FOR NAVIGATION END*/
+
+/*css for login buttons start*/
+
+
+.loginbox{
+            display:flex;
+            background:48CAE4#;
+            border-radius:20px;
+            margin:30px auto;
+            width:88%;
+            box-shadow: 14px 14px 20px #00B4D8, -14px -14px 20px
+  #ADE8F4;
+        }
+        
+        .btn{
+            //background:#F77F00;
+            width:fit-content;
+            margin:20px auto;
+            border-radius:10px;
+            border:2px solid #E9FF70;
+            //box-shadow:0px 0px 10px 10px #CED4DA;
+            
+        }
+        
+        .btn:hover{
+            //box-shadow:0px 0px 5px 5px #48CAE4;
+            background:#FF9E00;
+            font-size:20px;
+            border:none;
+            transition:.5s;
+            transform:translate(0,-10px);
+        }
+        
+        .btn button{
+            font-size:45px;
+            outline:none;
+            background:none;
+            border:none;
+            padding:20px;
+            color:#fff;
+            
+            
+        }
+        
+        .btn svg{
+            color:white;
+            display:inline-block;
+            //border:2px solid yellow;
+            
+        }
+        
+        /*css for login buttons end*/
+
+/*SLIDER CSS START*/
+    
+    .outline{ 
+        width:92%;
+    height:520px;
+    border:2px solid transparent;
+    margin:auto;
+    margin-top:40px;
+    border-radius:40px;
+    background: #48CAE4;
+  box-shadow: 14px 14px 20px #00B4D8, -14px -14px 20px
+  #ADE8F4;
+    }
+    
+    .content {
+      height: 480px;
+      width: 96%;
+      position: relative;
+      border-radius: 40px;
+      margin:auto;
+      margin-top:20px;
+    }
+
+    .images {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 40px;
+      overflow: hidden;
+    }
+
+    .imgpics {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transition: all 1s;
+      z-index: 5;
+    }
+
+    .btm-slides {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      z-index: 10;
+
+    }
+
+    .btm-slides span {
+      height: 8px;
+      width: 70px;
+      border: 2px solid #fff;
+      border-radius: 40px;
+      margin: 0 8px;
+      cursor: pointer;
+      z-index: 10;
+
+    }
+
+    .sliders {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30%;
+      background-color: transparent;
+      z-index: 10;
+      height: 100%;
+    }
+
+    #btn1 {
+      left: 0%;
+    }
+
+    #btn2 {
+      right: 0%;
+    }
+
+    .sliders span {
+      display: inline-block;
+      color: rgba(255, 255, 255, 0.8);
+      height: 50px;
+      position: absolute;
+      top: calc(50% - 50px);
+      cursor: pointer;
+    }
+
+    #btn1 span {
+      left: 0%;
+    }
+
+    #btn2 span {
+      right: 0%;
+    }
+
+    .sliders span:hover {
+      color: #ffffff;
+    }
+
+    /*SLIDER CSS END*/
+    
+    /* css for pdfbox and test box start*/
+    
+    .outbox{
+           display:flex;
+           height:560px;
+           margin:50px 0;
+           background:rgba(100,100,100,0.7);
+       }
+       
+        .testbox{
+            margin:130px auto 30px auto;
+            height:300px;
+            width:400px;
+            display:block;
+            background:#8098ff;
+            border-radius:15px;
+        }
+        
+        .testcir{
+            height:200px;
+            width:200px;         
+            border-radius:50%;
+            border:2px solid transparent;
+            display:block;
+            margin:-100px auto;
+            background:#fff155;
+        }
+        
+        .testciri{ 
+            color:white;
+            display:block;
+            margin:0px auto;
+            padding:30px 30px;
+                         
+        }
+        
+        .cirpdfi{
+            display:block;
+            margin:37px 20px;
+        }
+        
+        .ttexth{
+            background:red;
+            text-align:center;
+            width:100%;
+            margin:110px auto 0 auto;
+            background:rgba(255,255,255,0.3);
+        }
+        
+        .ttexth span{
+            font-size:40px;
+            font-weight:bold;
+            color:#fff;
+            font-family:ariel;
+            
+            }
+        
+     
+        
+        .ttext{
+            color:#fff155;
+            font-size:22px;
+            width:94%;
+            margin:5px 15px;
+            font-family:ariel;
+        }
+        
+        .ttext2{
+            color:#fff155;
+            font-size:21px;
+            width:94%;
+            margin:5px 15px;
+            font-family:ariel;
+        }
+        
+        .tbtn1{
+            font-size:30px;
+            display:block;
+            margin:40px auto;
+            padding:15px 15px;
+            border:1px solid #aaffca;
+            color: #434a59;
+            background:none;
+            border-radius:34px;
+            box-shadow: 0 0 40px 40px #aaffca inset, 0 0 0 0 blue;
+         transition: all 150ms ease-in-out;
+         }
+  
+  .tbtn1:hover {
+    box-shadow: 0 0 10px 0 #aaffca inset, 0 0 10px 4px #aaffca;
+    color:#fff;
+    
+    transition:.5s;
+            transform:translate(0,-10px);
+  
+}
+
+        
+        
+        /*css for pdf box and test box end*/
+        
+        /* css for second slider start*/
+        
+        .seccon{
+           display:flex;
+           overflow:auto;
+           padding:10px;
+           gap:10px;
+           scroll-snap-type: x mandatory;
+           scroll-padding:10px;
+           
+        }
+        
+        .seccon .item{
+            flex:0 0 97vw;
+            flex:0 0 95%;
+            scroll-snap-align:start;
+            scroll-snap-stop:always;
+            
+        }
+        
+        .item{
+            width:900px;
+            height:400px;
+            border-radius:40px;
+           
+        }
+        
+        /* css for second slider end*/
+        
+        
+        
+
+/*css for pdf box start*/
+
+.con2 {
+  margin:60px auto;
+  display:block;
+  width: 850px;
+  height: 1150px;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #48CAE4;
+  box-shadow: 14px 14px 20px #00B4D8, -14px -14px 20px
+  #ADE8F4;
+  }
+  
+  .con2 h1{
+      display:block;
+      text-align:center;
+      font-size:50px;
+      font-family: ariel;
+      color: transparent;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: #fff;
+      margin:10px 0;
+  }
+  
+  .pdfbox{
+    border:5px groove #fff;
+    height:900px;
+    width:680px;
+    margin:auto;
+}
+    
+
+
+ .buttonDownload { 
+	display:block;
+	position: relative;
+	padding: 20px 110px;
+	background-color: #4CC713;
+	color: white;
+	font-family: ariel;
+	text-decoration: none;
+	font-size: 2em;
+	text-align: center;
+	text-indent: 25px;
+	margin:20px auto;
+	background: #48CAE4;
+  box-shadow: 14px 14px 20px #00B4D8, -14px -14px 20px
+    #ADE8F4 ;
+  border-radius:40px;
+	
+}    
+       
+
+
+.buttonDownload:hover {
+	background-color: #0077B6;
+	color: #fff;
+}
+
+.buttonDownload:before, .buttonDownload:after {
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 75px;
+	top: 52%;
+}
+
+/* Download box shape  */
+.buttonDownload:before {
+	width: 36px;
+	height: 5px;
+	border-style: solid;
+	border-width: 0 2px 2px;
+}
+
+/* Download arrow shape */
+.buttonDownload:after {
+	width: 0;
+	height: 0;
+	margin-left: 12px;
+	margin-top: -16px;
+  
+	border-style: solid;
+	border-width: 8px 8px 0 8px;
+	border-color: transparent;
+	border-top-color: inherit;
+	
+	animation: downloadArrow 2s linear infinite;
+	animation-play-state: paused;
+}
+
+.buttonDownload::before {
+	border-color: #0018ff;
+}
+
+.buttonDownload:after {
+	border-top-color: #0018ff;
+	animation-play-state: running;
+}
+
+/* keyframes for the download icon anim */
+@keyframes downloadArrow {
+	/* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
+	0% {
+		margin-top: -7px;
+		opacity: 1;
+	}
+	
+	0.001% {
+		margin-top: -15px;
+		opacity: 0;
+	}
+	
+	50% {
+		opacity: 1;
+	}
+	
+	100% {
+		margin-top: 0;
+		opacity: 0;
+	}
+}  
+ 
+/*css for pdf box end*/
+
+
+
+.outter{
+            border:2px solid red;
+            width:98%;
+            //background:url('https://shivam0010.github.io/logos/bg.jpg');
+            margin:auto;
+        }
+
+.mainbox{
+    //border:2px solid white;
+    display:flex;
+    //width:1260px;
+    font-family:ariel;
+}        
+        .con{
+           width:300px;
+           height:300px;
+            //border:2px solid red;
+            border-radius:20px;
+            margin:80px auto;
+            background:#fff;
+ box-shadow: 14px 14px 20px #00B4D8, -14px -14px 20px
+  #ADE8F4;
+ 
+            
+        }
+        
+        .con .cir{
+            height:150px;
+            width:150px;
+            margin:-75px auto;
+            border-radius:50%;
+            justify-content:center;
+            display:block;
+            background:rgba(33, 37, 41,0.7);
+            background:#2d545e;
+            }
+       
+        
+        
+        .con .cir img{
+            width:100%;
+            height:100%;
+            border-radius:50%;
+            
+        }
+        
+        .iaf{
+            margin:0px 3px;
+        }
+        
+        .upplogo{
+            margin:0px 6px;
+        }
+        
+        .text{
+            border:2px solid transparent;
+            background:rgba(33, 37, 41,0.7);
+            background:#2d545e;
+            height:69%;
+            margin:90px 0;
+            display:block;
+            border-top-left-radius:80px;
+            border-top-right-radius:80px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+            //border-radius:50px;
+            
+        }
+        
+        .con a {
+            text-decoration:none;
+            color:#138808;
+        }
+        
+        .text .jobname {
+            color:#fff;
+            font-size:26px;
+            margin:13px;
+            font-weight:bold;
+            text-align:center;
+        }
+        
+        .text .emode {
+            color:#beef00;
+            margin:10px;
+            font-size:24px;
+            text-align:center;
+        }
+        
+        .text .age {
+            color:#fff685;
+            margin:10px;
+            font-size:24px;
+            text-align:center;
+        }
+        
+        
+        
+
+/* CSS for see details button*/
+.readmorebutton{
+  padding: 0.5em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.readmorebutton:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.readmorebutton:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+        .text button{
+            display:block;
+            margin:20px auto;
+        }
+        
+        
+        /* CSS for more exam details button*/
+        
+        .othebtn{
+            width:96%;
+            height:170px;
+            margin:0px auto;
+            background:#FFA07A;
+            border-radius:20px;
+          
+        }
+        
+        .othebtn span{
+            display:block;
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            padding:20px 0px;
+            color:#fff;
+            
+        }
+        
+        .othebtn button {
+            color:#fff;
+            display:block;
+            font-size:35px;
+            margin:0 auto;
+            padding:10px 40px;
+            border-radius:30px;
+            background:none;
+            border:3px solid #fff;
+        }
+        
+   .othebtn button:active{
+background:none;
+border:2px solid #d5f4ff;	
+color:#A7F432;
+box-shadow:0px 0px 10px 15px #A7F432;
+}
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+     <!-- heading & logo -->
+    <header>
+        <div class="headinglogobox"></div>
+        
+        <span class="headingtext">DIVYA COMPITITION CLASSES</span>
+    </header>    
+    
+      <!-- nav bar -->
+    <nav>
+	<a href="#"><svg class="home" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+Home</a>
+	<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+About</a>
+	<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>Register</a>
+	<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+Pdf's</a>
+	<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>Contact</a>
+	<div class="animation start-home"></div>
+</nav>
+
+<!-- navigation end -->
+
+<!-- login buttons -->
+
+<div class="loginbox">
+       <div class="btn"><button>Teachers Login <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-in"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg></button></div>
+
+
+<div class="btn"><button>Students Login <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-in"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg></button></div>
+
+    </div>
+    
+    <!-- login button html end -->
+
+<!-- Image Slider -->
+<section>
+    <div class="outline">
+  <div class="content">
+    <div class="images">
+      <img id="pic1" style="left: 0%;visibility: visible;" class="imgpics" src="https://shivam0010.github.io/myphotos.io/rssirff.png">
+      <img id="pic2" style="left: 100%;visibility: hidden;" class="imgpics" src="https://shivam0010.github.io/myphotos.io/yogisirf.png">
+      <img id="pic3" style="left: 100%;visibility: hidden;" class="imgpics" src="https://shivam0010.github.io/myphotos.io/infohindi.png">
+      <img id="pic4" style="left: 100%;visibility: hidden;" class="imgpics" src="https://shivam0010.github.io/myphotos.io/infoeng.png">
+      <img id="pic5" style="left: -100%;visibility: hidden;" class="imgpics" src="https://shivam0010.github.io/myphotos.io/jobinfo.png">
+    </div>
+
+    <div class="btm-slides">
+      <span id="indi1" style="background-color: white;" onclick="bottomindi(1)"></span>
+      <span id="indi2" onclick="bottomindi(2)"></span>
+      <span id="indi3" onclick="bottomindi(3)"></span>
+      <span id="indi4" onclick="bottomindi(4)"></span>
+      <span id="indi5" onclick="bottomindi(5)"></span>
+    </div>
+    <div id="btn1" class="sliders" onclick="left(0)">
+      <span><svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </span>
+    </div>
+
+    <div id="btn2" class="sliders" onclick="right(0)">
+      <span><svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg></span>
+    </div>
+  </div>
+  </div>
+      
+      <!-- image slider html end -->
+      
+      <!-- html for pdfbox and test box start -->
+      
+      <div class="outbox">
+    <div class="testbox">
+        <div class="testcir">
+                
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="testciri"><g data-name="Computer Desktop"><path fill="#dad7e5" d="M47,4V30H1V4A2,2,0,0,1,3,2H45A2,2,0,0,1,47,4Z"/><path fill="#edebf2" d="M47,4V28H30A26,26,0,0,1,4,2H45A2,2,0,0,1,47,4Z"/><path fill="#dad7e5" d="M47,30v4a2,2,0,0,1-2,2H3a2,2,0,0,1-2-2V30Z"/><path fill="#edebf2" d="M47,30v4H8a4,4,0,0,1-4-4Z"/><rect width="12" height="10" x="18" y="36" fill="#c6c3d8"/><path fill="#dad7e5" d="M30,38v8H20V42a4,4,0,0,1,4-4Z"/><path fill="#dad7e5" d="M32,46H16a1,1,0,0,1,0-2H32A1,1,0,0,1,32,46Z"/><path fill="#374f68" d="M25,33a1,1,0,0,0-2,0A1,1,0,0,0,25,33Z"/><path fill="#9fdbf3" d="M45,5V30H3V5A1,1,0,0,1,4,4H44A1,1,0,0,1,45,5Z"/><path fill="#b2e5fb" d="M45,5V28H30A24,24,0,0,1,6,4H44A1,1,0,0,1,45,5Z"/><polygon fill="#edebf2" points="45 4 45 30 35 30 45 4" opacity=".2"/><polygon fill="#edebf2" points="36 4 26 30 17 30 27 4 36 4" opacity=".2"/><polygon fill="#edebf2" points="20 4 10 30 4 30 14 4 20 4" opacity=".2"/></g></svg>
+
+        </div>
+        <div class="ttexth">
+          <span>FREE TEST's</span> 
+        </div>
+        
+        <div class="ttext">
+           1. Here you get free tests.</br>
+           2. By giving them you can know your     preparation.</br>
+           3. These tests are designed keeping in mind the latest pattern of your exam.
+        </div>
+        <button class="tbtn1">Go To Test's</button>
+       
+    </div>
+     
+    
+    
+    <div class="testbox">
+        
+        <div class="testcir">
+                
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="126" height="126" viewBox="0 0 48 48" class="cirpdfi"><g display="none"><rect width="48" height="48" fill="#fff" color="#000" overflow="visible" style="isolation:auto;mix-blend-mode:normal"/><rect style="isolation:auto;mix-blend-mode:normal" width="48" height="48" x="-46.987" fill="#fff" color="#000" overflow="visible"/><rect width="48" height="48" x="-102.987" fill="#fff" color="#000" overflow="visible" style="isolation:auto;mix-blend-mode:normal"/><rect style="isolation:auto;mix-blend-mode:normal" width="48" height="48" y="57.592" fill="#fff" color="#000" overflow="visible"/><rect width="48" height="48" x="-46.987" y="57.592" fill="#fff" color="#000" overflow="visible" style="isolation:auto;mix-blend-mode:normal"/><rect style="isolation:auto;mix-blend-mode:normal" width="48" height="48" x="-102.987" y="57.592" fill="#fff" color="#000" overflow="visible"/><rect width="48" height="48" y="117.592" fill="#fff" color="#000" overflow="visible" style="isolation:auto;mix-blend-mode:normal"/><rect style="isolation:auto;mix-blend-mode:normal" width="48" height="48" x="-46.987" y="117.592" fill="#fff" color="#000" overflow="visible"/><rect width="48" height="48" x="-102.987" y="117.592" fill="#fff" color="#000" overflow="visible" style="isolation:auto;mix-blend-mode:normal"/><rect style="isolation:auto;mix-blend-mode:normal" width="48" height="48" y="173.592" fill="#fff" color="#000" overflow="visible"/><rect width="48" height="48" x="-46.987" y="173.592" fill="#fff" color="#000" overflow="visible" style="isolation:auto;mix-blend-mode:normal"/><rect style="isolation:auto;mix-blend-mode:normal" width="48" height="48" x="-102.987" y="173.592" fill="#fff" color="#000" overflow="visible"/><rect width="48" height="48" y="231.592" fill="#fff" color="#000" overflow="visible" style="isolation:auto;mix-blend-mode:normal"/><rect style="isolation:auto;mix-blend-mode:normal" width="48" height="48" x="-46.987" y="231.592" fill="#fff" color="#000" overflow="visible"/><rect width="48" height="48" x="-102.987" y="231.592" fill="#fff" color="#000" overflow="visible" style="isolation:auto;mix-blend-mode:normal"/></g><g transform="translate(-123 -1260.362)"><path fill="#242730" style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="m 149,1262.3622 c -0.554,0 -1,0.446 -1,1 l 0,1 c 0,0.554 0.446,1 1,1 l 10.0039,0 0.016,6.4844 c 0,0.8253 0.6708,1.4938 1.4961,1.4961 l 6.4844,0.017 0,28.502 c 0,0.8569 -0.6431,1.5 -1.5,1.5 l -23,0 c -0.857,0 -1.5,-0.6431 -1.5,-1.5 l 0,-1.5 c 0,-0.554 -0.446,-1 -1,-1 l -1,0 c -0.554,0 -1,0.446 -1,1 l 0,1.5 c 0,2.4671 2.0329,4.5 4.5,4.5 l 23,0 c 2.467,0 4.5,-2.0329 4.5,-4.5 l 0,-30.4863 c -1e-4,-0.3978 -0.1582,-0.7793 -0.4395,-1.0606 l -7.5137,-7.5136 c -0.2812,-0.2814 -0.6627,-0.4394 -1.0605,-0.4395 z m -11,21 c 0,0.554 0.446,1 1,1 l 1,0 c 0.554,0 1,-0.446 1,-1 l 0,-10 c 0,-0.554 -0.446,-1 -1,-1 l -1,0 c -0.554,0 -1,0.446 -1,1 z" color="#000" font-family="sans-serif" font-weight="400" overflow="visible"/><path fill="#11c111" style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="m 142.5,258 c -2.467,0 -4.5,2.0329 -4.5,4.5 l 0,2.5 c 0,0.554 0.446,1 1,1 l 1,0 c 0.554,0 1,-0.446 1,-1 l 0,-2.5 c 0,-0.8569 0.6431,-1.5 1.5,-1.5 l 2.5,0 c 0.554,0 1,-0.446 1,-1 l 0,-1 c 0,-0.554 -0.446,-1 -1,-1 l -2.5,0 z M 127,282 c -1.10801,0 -2,0.892 -2,2 l 0,7 c 0,1.108 0.89199,2 2,2 l 25,0 c 1.10801,0 2,-0.892 2,-2 l 0,-7 c 0,-1.108 -0.89199,-2 -2,-2 l -25,0 z m 4.96484,2.74023 1.92969,0 c 1.53734,0 2.31055,0.60182 2.31055,1.72852 0,1.1936 -0.77321,1.82422 -2.31055,1.82422 l -0.79297,0 0,0.95312 0.46875,0 c 0.38195,0 0.57227,0.12396 0.57227,0.50586 0,0.382 -0.19032,0.51563 -0.57227,0.51563 l -1.60547,0 c -0.38195,0 -0.57226,-0.13363 -0.57226,-0.51563 0,-0.3246 0.18098,-0.50586 0.49609,-0.50586 l 0.0762,0 0,-3.47461 -0.0664,0 c -0.32466,0 -0.50586,-0.18142 -0.50586,-0.51562 0,-0.3724 0.19031,-0.51563 0.57226,-0.51563 z m 5.54493,0 0.87695,0 0.27734,0 c 0.88803,0 1.62435,0.02 2.19727,0.36329 0.73525,0.4488 1.16406,1.28888 1.16406,2.39648 0,1.1554 -0.48762,2.04312 -1.31836,2.48242 -0.48699,0.2674 -1.08832,0.28516 -1.79492,0.28516 l -0.52539,0 -0.87695,0 c -0.3915,0 -0.5918,-0.12413 -0.5918,-0.51563 0,-0.3342 0.18141,-0.50586 0.51562,-0.50586 l 0.0762,0 0,-3.47461 -0.0762,0 c -0.33421,0 -0.51562,-0.18142 -0.51562,-0.51562 0,-0.382 0.19075,-0.51563 0.5918,-0.51563 z m 5.79101,0 3.82031,0 c 0.39148,0 0.48633,0.095 0.48633,0.42969 l 0,1.04102 c 0,0.4011 -0.13346,0.59179 -0.50586,0.59179 -0.38195,0 -0.49609,-0.20029 -0.49609,-0.59179 l 0,-0.48828 -2.16797,0 0,1.19336 0.81055,0 0,-0.0566 c 0,-0.3533 0.1634,-0.5254 0.47851,-0.5254 0.3533,0 0.47656,0.19249 0.47656,0.58399 l 0,0.96289 c 0,0.3915 -0.12326,0.58398 -0.47656,0.58398 -0.31511,0 -0.47851,-0.16384 -0.47851,-0.49804 l 0,-0.0859 -0.81055,0 0,1.36523 0.25781,0 c 0.38194,0 0.57227,0.12396 0.57227,0.50586 0,0.382 -0.19033,0.51563 -0.57227,0.51563 l -1.39453,0 c -0.38195,0 -0.57226,-0.13363 -0.57226,-0.51563 0,-0.3246 0.18099,-0.50586 0.49609,-0.50586 l 0.0762,0 0,-3.47461 -0.0664,0 c -0.32466,0 -0.50586,-0.18142 -0.50586,-0.51562 0,-0.3724 0.19031,-0.51563 0.57226,-0.51563 z m -4.3125,1.00196 c -0.0859,0 -0.17989,-4.4e-4 -0.27539,0.01 l 0,3.48438 c 0.0955,0.01 0.18168,0.01 0.26758,0.01 1.16494,0 1.70898,-0.55276 1.70898,-1.75586 0,-1.1745 -0.55532,-1.74804 -1.70117,-1.74804 z m -5.88672,0.0664 0,1.4336 0.65821,0 c 0.73525,0 1.10937,-0.25867 1.10937,-0.72657 0,-0.4679 -0.37412,-0.70703 -1.10937,-0.70703 l -0.65821,0 z" color="#000" font-family="sans-serif" font-weight="400" overflow="visible" transform="translate(0 1004.362)"/></g></svg>
+
+        </div>
+        
+        <div class="ttexth">
+          <span>FREE PDF's</span> 
+        </div>
+        
+        <div class="ttext2">
+           1. Here you get free hight quality pdf.</br>
+           2. These PDFs have been created by our qualified and experienced teachers..</br>
+           3. These Pdf's are designed keeping in mind the latest pattern of your exam.
+        </div>
+        <button class="tbtn1">Go To Pdf's</button>
+    </div>
+    
+    </div>
+    
+    <!-- html for pdf box and test box end -->
+    
+    
+    <!-- html for second slider start-->
+    
+    <div class="seccon" id="imgcon">
+        <img src="https://shivam0010.github.io/myphotos.io/policeb.png" alt="" class="item" id="img1">
+        
+        <img src="https://shivam0010.github.io/myphotos.io/gd.png" alt="" class="item">
+        
+        <img src="https://shivam0010.github.io/myphotos.io/vdo.png" alt="" class="item">
+        
+        <img src="https://shivam0010.github.io/myphotos.io/sl4.png" alt="" class="item">
+        
+        <img src="https://shivam0010.github.io/myphotos.io/sl5.png" alt="" class="item">
+        
+        <img src="https://shivam0010.github.io/myphotos.io/sl6.png" alt="" class="item">
+        
+    </div>
+    
+    <!-- html for second slider end -->
+      
+      <!-- Pdf box -->
+      
+      <div class="con2">
+          <h1>TODAY CURRENT AFFAIRS PDF</h1>
+         <div class="pdfbox"></div> 
+         
+         <a href="#" class="buttonDownload"><div class="down">Download</div></a>
+      </div>
+      
+      <!-- pdf box html end -->
+      
+       <!-- Html start for cards -->
+    <div class="outter">
+        
+    <div class="mainbox">
+        <!-- 1st card -->
+    <div class="con">
+       <div class="cir">
+       <img src="https://shivam0010.github.io/logos/armylogo.png" alt=""></div>
+  
+       <div class="text">
+          <div class="jobname">INDIAN ARMY</div>
+          <div class="emode">EXAM MODE :- OFFLINE</div>
+          <div class="age">AGE LIMIT :- 17.5 TO 23</div>
+          <button class="readmorebutton">See Details</button>
+       </div>
+       </div>
+       
+       <!-- 2nd card -->
+       <div class="con">
+       <div class="cir">
+       <img src="https://shivam0010.github.io/logos/iaf.png" alt="" class="iaf"></div>
+       
+       <div class="text">
+          <div class="jobname">INDIAN AIRFORCE</div>
+          <div class="emode">EXAM MODE :- ONLINE</div>
+          <div class="age">AGE LIMIT :- 17.5 TO 23</div>
+          <button class="readmorebutton">See Details</button>
+       </div>
+       </div>
+       
+     <!-- 3rd card -->
+     <div class="con">
+       <div class="cir">
+       <img src="https://shivam0010.github.io/logos/navylogo.png" alt=""></div>
+       
+       <div class="text">
+          <div class="jobname">INDIAN NAVY</div>
+          <div class="emode">EXAM MODE :- ONLINE</div>
+          <div class="age">AGE LIMIT :- 17.5 TO 23</div>
+          <button class="readmorebutton">See Details</button>
+       </div>
+       </div>  
+    </div>
+    
+    <!-- 2nd con -->
+    <div class="mainbox">
+        
+        <!-- 1st card -->
+    <div class="con">
+       <div class="cir">
+       <img src="https://shivam0010.github.io/logos/coastguard.png" alt=""></div>
+       
+       <div class="text">
+          <div class="jobname">COAST GUARD</div>
+          <div class="emode">EXAM MODE :- OFFLINE</div>
+          <div class="age">AGE LIMIT :- 17.5 TO 23</div>
+          <button class="readmorebutton">See Details</button>
+       </div>
+       </div>
+       
+       <!-- 2nd card -->
+       <div class="con">
+       <div class="cir">
+       <img src="https://shivam0010.github.io/logos/upp.png" alt="" class="upplogo"></div>
+       
+       <div class="text">
+          <div class="jobname">U.P POLICE</div>
+          <div class="emode">EXAM MODE :- OFFLINE</div>
+          <div class="age">AGE LIMIT :- 17.5 TO 23</div>
+          <button class="readmorebutton">See Details</button>
+       </div>
+       </div>
+       
+       <!-- 3rd card -->
+     <div class="con">
+       <div class="cir">
+       <img src="https://shivam0010.github.io/logos/dp.png" alt=""></div>
+       
+       <div class="text">
+          <div class="jobname">DELHI POLICE</div>
+          <div class="emode">EXAM MODE :- ONLINE</div>
+          <div class="age">AGE LIMIT :- 17.5 TO 23</div>
+          <button class="readmorebutton">See Details</button>
+       </div>
+       </div>        
+    </div>
+   
+   <!-- 3rd con -->
+    <div class="mainbox">
+        <!-- first card -->
+    <div class="con">
+       <div class="cir">
+       <img src="https://shivam0010.github.io/logos/ssc.png" alt=""></div>
+       
+       <div class="text">
+          <div class="jobname">SSC GD</div>
+          <div class="emode">EXAM MODE :- ONLINE</div>
+          <div class="age">AGE LIMIT :- 17.5 TO 23</div>
+          <button class="readmorebutton">See Details</button>
+       </div>
+       </div>
+       
+       <!-- 2nd card -->
+       <div class="con">
+       <div class="cir">
+       <img src="https://shivam0010.github.io/logos/rrb.png" alt=""></div>
+       
+       <div class="text">
+          <div class="jobname">INDIAN RAILWAY</div>
+          <div class="emode">EXAM MODE :- ONLINE</div>
+          <div class="age">AGE LIMIT :- 17.5 TO 23</div>
+          <button class="readmorebutton">See Details</button>
+       </div>
+       </div>
+       
+       <!-- 3rd card -->
+    <div class="con">
+       <div class="cir">
+       <img src="https://shivam0010.github.io/logos/pet.png" alt=""></div>
+       
+     <a href="syllabus.html/#name5"><div class="text">
+          <div class="jobname">UPSSSC PET</div>
+          <div class="emode">EXAM MODE :- OFFLINE</div>
+          <div class="age">AGE LIMIT :- 17.5 TO 23</div>
+          <button class="readmorebutton">See Details</button>
+       </div></a>
+       </div>
+     
+    </div>
+    
+    <!-- html for cards and other exams btn start -->
+        <div class="othebtn">
+            <span>And Others Competition Exams</span></br>
+            <button>See Details </button>
+        </div>
+        </br>
+        </br>
+        <h1>Hi my name is Shivam</h1>
+    <!-- html for cards and other exams btn end  -->
+    
+    </div>
+    
+    <!-- html for cards end -->
+      
+      
+      
+      
+      
+      </section>
+      
+      <footer>
+          
+      </footer>
+     <script>
+    /*SLIDER SCRIPT START*/
+    
+    index = 1;
+    totalpics = 5;
+    flag = 0;
+    function right(i) {
+      if (flag == 0) {
+        if (i == 0) flag = 1;
+        let temp = index;
+
+        if (temp > totalpics) temp = 1;
+        document.getElementById("pic" + temp).style.zIndex = "-5";
+        document.getElementById("pic" + temp).style.left = "-100%";
+        document.getElementById("pic" + temp).style.visibility = "hidden";
+        document.getElementById("indi" + temp).style.backgroundColor = "transparent";
+        if (temp >= totalpics) temp = 0;
+        document.getElementById("pic" + ++temp).style.zIndex = "2";
+        document.getElementById("pic" + temp).style.left = "0%";
+        document.getElementById("pic" + temp).style.visibility = "visible";
+        document.getElementById("indi" + temp).style.backgroundColor = "white";
+        if (temp >= totalpics) temp = 0;
+        document.getElementById("pic" + ++temp).style.zIndex = "-5";
+        document.getElementById("pic" + temp).style.left = "100%";
+        document.getElementById("pic" + temp).style.visibility = "hidden";
+        document.getElementById("indi" + temp).style.backgroundColor = "transparent";
+
+        if (index >= totalpics) index = 0;
+        index++;
+      }
+
+    }
+    function left(i) {
+      if (flag == 0) {
+        if (i == 0) flag = 1;
+        let temp = index;
+
+        if (temp < 1) temp = totalpics;
+        document.getElementById("pic" + temp).style.zIndex = "-5";
+        document.getElementById("pic" + temp).style.left = "100%";
+        document.getElementById("pic" + temp).style.visibility = "hidden";
+        document.getElementById("indi" + temp).style.backgroundColor = "transparent";
+        if (temp <= 1) temp = totalpics + 1;
+        document.getElementById("pic" + --temp).style.zIndex = "5";
+        document.getElementById("pic" + temp).style.left = "0%";
+        document.getElementById("pic" + temp).style.visibility = "visible";
+        document.getElementById("indi" + temp).style.backgroundColor = "white";
+        if (temp <= 1) temp = totalpics + 1;
+        document.getElementById("pic" + --temp).style.zIndex = "-5";
+        document.getElementById("pic" + temp).style.left = "-100%";
+        document.getElementById("pic" + temp).style.visibility = "hidden";
+        document.getElementById("indi" + temp).style.backgroundColor = "transparent";
+
+        if (index <= 1) index = totalpics + 1;
+        index--;
+      }
+
+    }
+    function bottomindi(n) {
+      if (n < index) {
+        n = Math.abs(index - n);
+        for (; n; n--) {
+          left(1);
+        }
+      }
+      else {
+        n = Math.abs(n - index);
+        for (; n; n--) {
+          right(1);
+        }
+
+      }
+    }
+
+    function sleep(sec) {
+      date1 = Date.now();
+      do {
+        date2 = Date.now();
+
+      } while (date2 - date1 < sec);
+    }
+
+    setInterval(() => {
+      flag = 0;
+    }, 900, flag);
+
+    setInterval(() => {
+      right(0);
+    }, 8000);
+
+    /*SLIDER SCRIPT END*/
+    
+    
+    /* second slider script start*/
+    
+    imgwidth=document.getElementById("img1").width;
+       
+        i=0;
+       imgcon= document.getElementById("imgcon");
+       setInterval(()=>{
+       if(i>=3){
+          imgcon.scrollTo(0,0); 
+          i=0;
+       }
+       else{i++;
+       imgcon.scrollBy(imgwidth,0);
+       }
+       },5000);
+       
+/* second slider script end*/
+  </script>
+</body>
+</html>
